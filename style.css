@@ -49,6 +49,7 @@ body {
   font-weight: 700;
   font-size: 16px;
   font-style: normal;
+  text-transform: uppercase;
   width: 147px;
   height: 100%;
 }
@@ -111,31 +112,73 @@ body {
   padding: 20px;
   border-radius: 66px;
   width: 40%;
-  font-family: "Golos Text", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 500;
-  font-size: 16px;
-  font-style: normal;
   cursor: pointer;
   transition: all 0.5s ease;
 }
 
 .btn-support {
-  color: #fff;
   background-color: #1f1f1f;
+}
+
+.link {
+  text-decoration: none;
+  font-family: "Golos Text", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-size: 16px;
+  font-style: normal;
+  transition: all 0.5s ease;
+}
+
+.support-link {
+  color: #fff;
+}
+
+.more-link {
+  color: #1f1f1f;
 }
 
 .btn-support:hover {
   background-color: #fbce51;
   border: #fbce51;
-  color: #1f1f1f;
-}
-
-.btn-more {
-  color: #1f1f1f;
+  .support-link {
+    color: #1f1f1f;
+  }
 }
 
 .btn-more:hover {
-    background-color: #1f1f1f;
+  background-color: #1f1f1f;
+  .more-link {
     color: #fff;
+  }
+}
+
+.ticker {
+  height: 58px;
+  width: 100%;
+  background-color: #f54932;
+  margin: 0 auto;
+}
+
+.ticker-text {
+  padding-top: 18px;
+  color: #fff;
+  font-family: "Merriweather", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 22px;
+  text-align: center;
+  animation: text 15s infinite linear;
+  padding-left: 100%;
+  white-space: nowrap;
+}
+
+@keyframes text {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  100% {
+    transform: translate(-250%, 0);
+  }
 }
