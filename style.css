@@ -10,20 +10,19 @@ body {
 
 .section {
   margin: 0 auto;
-  width: 100%;
-  height: 100vh;
+  width: 95%;
   padding-left: 5%;
 }
 
 .main-section {
   background-image: url(assets/img/main-background.png);
   background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 700px;
+  height: 92vh;
+  background-size: 100% 100%;
 }
 
 .header {
-  padding-top: 3%;
+  padding-top: 2vh;
   display: flex;
   align-items: center;
   width: 245px;
@@ -58,9 +57,9 @@ body {
 }
 
 .main-section-content {
-  width: 42vw;
-  height: 63vh;
-  margin-top: 8vh;
+  width: 40vw;
+  height: 63%;
+  margin-top: 7vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -74,7 +73,8 @@ body {
 
 .main-heading {
   width: 100%;
-  font-size: 60px;
+  font-size: 4.4vw;
+  line-height: 110%;
   color: #313131;
   text-align: center;
   text-align: center;
@@ -97,13 +97,14 @@ body {
   width: 100%;
   color: #313131;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 1.3vw;
+  line-height: 130%;
   text-align: center;
 }
 
 .main-btns {
   width: 100%;
-  margin-top: 6vh;
+  margin-top: 5vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -111,12 +112,14 @@ body {
 
 .main-btn {
   border: #1f1f1f solid 2px;
-  text-align: center;
-  padding: 20px;
-  border-radius: 66px;
-  width: 40%;
+  border-radius: 4vw;
+  width: 48%;
+  height: 8vh;
   cursor: pointer;
   transition: all 0.5s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .btn-support {
@@ -124,9 +127,12 @@ body {
 }
 
 .link {
+  margin: 1vh 1vw;
+  text-align: center;
   text-decoration: none;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 1.2vw;
+  line-height: 130%;
   transition: all 0.5s ease;
 }
 
@@ -154,7 +160,7 @@ body {
 }
 
 .ticker {
-  height: 58px;
+  height: 8vh;
   width: 100%;
   display: flex;
   align-items: center;
@@ -163,9 +169,8 @@ body {
 }
 
 .ticker-text {
-  /* padding-top: 18px; */
   color: #fff;
-  font-size: 22px;
+  font-size: 1.5vw;
   text-align: center;
   animation: text 20s infinite linear;
   padding-left: 100%;
@@ -183,13 +188,13 @@ body {
   display: flex;
   align-items: center;
   gap: 4%;
-  margin-top: 4%;
+  margin-top: 10vh;
 }
 
 .support-heading {
   width: 55vw;
   color: #313131;
-  font-size: 36px;
+  font-size: 2vw;
   text-transform: uppercase;
   text-align: left;
 }
@@ -229,8 +234,8 @@ body {
 .ceil {
   border: 2px solid #d0d0d0;
   text-align: left;
-  font-size: 20px;
-  padding: 16px;
+  font-size: 1.5vw;
+  padding: 1vw;
 }
 
 .first-column {
@@ -257,15 +262,102 @@ body {
 }
 
 .last-row span {
-    text-decoration: line-through #f54932;
+  text-decoration: line-through #f54932;
 }
 
 .support-text {
-    width: 100%;
-    margin-top: 4%;
-    color: #3057A2;
-    font-size: 20px;
-    text-align: left;
+  width: 100%;
+  margin-top: 4%;
+  color: #3057a2;
+  font-size: 1.5vw;
+  text-align: left;
+}
+
+.section-stages {
+  margin-top: 26vh;
+  z-index: 0;
+  position: relative;
+}
+
+.section-stages-heading {
+  width: 59vw;
+  font-size: 4vw;
+  text-transform: uppercase;
+  line-height: 120%;
+  color: #313131;
+}
+
+.section-stages-text {
+  display: inline-block;
+  width: 20vw;
+  font-size: 1.5vw;
+  font-weight: 400;
+  line-height: 120%;
+  text-transform: none;
+  color: #3057a2;
+}
+
+.stages-of-transformation {
+  margin-right: 5vw;
+  margin-top: 7vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.4vw;
+}
+
+.stage {
+  display: flex;
+  gap: 2.6vw;
+  align-items: flex-start;
+  background-image: url(assets/img/stages-background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 1.5vw;
+}
+
+.stage-item3 {
+  grid-row: span 2;
+}
+
+.stage-item7 {
+  grid-column: span 2;
+}
+
+.stage-item7 p {
+  width: 33vw;
+}
+
+.stage-number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 50%;
+  font-size: 1.5vw;
+  line-height: 120%;
+  font-weight: 600;
+  color: #313131;
+  padding: 0.4vw 0.8vw;
+}
+
+.stage-description {
+  font-size: 1.5vw;
+  line-height: 120%;
+  font-weight: 500;
+  color: #313131;
+  text-align: left;
+}
+
+.helicopter {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  background-image: url(assets/img/stage-helicopter.png);
+  background-repeat: no-repeat;
+  background-position: bottom 0 right 0;
 }
 
 @keyframes text {
