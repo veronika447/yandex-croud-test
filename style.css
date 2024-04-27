@@ -10,23 +10,25 @@ html {
 body {
   width: 100%;
   overflow-x: hidden;
+  margin: 0 auto;
 }
 
 .section {
   margin: 0 auto;
-  width: 95%;
-  padding-left: 5%;
+  width: 94.8%;
+  padding-left: 5.2%;
 }
 
 .main-section {
   background-image: url(assets/img/main-background.png);
   background-repeat: no-repeat;
   height: 92vh;
+  max-height: 700px;
   background-size: 100% 100%;
 }
 
 .header {
-  padding-top: 2vh;
+  padding-top: 1.7vh;
   display: flex;
   align-items: center;
   width: 245px;
@@ -41,7 +43,7 @@ body {
 }
 
 .logo-img {
-  width: 21px;
+  width: 23px;
   height: 31px;
 }
 
@@ -54,7 +56,8 @@ body {
 .header-heading {
   color: #595653;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 16.65px;
+  line-height: 108%;
   text-transform: uppercase;
   width: 147px;
   height: 100%;
@@ -63,7 +66,7 @@ body {
 .main-section-content {
   width: 40vw;
   height: 63%;
-  margin-top: 7vh;
+  margin-top: 4vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -98,7 +101,7 @@ body {
 }
 
 .main-text {
-  margin-top: 3vh;
+  margin-top: 1vh;
   width: 100%;
   color: #313131;
   font-weight: 400;
@@ -109,7 +112,7 @@ body {
 
 .main-btns {
   width: 100%;
-  margin-top: 5vh;
+  margin-top: 2.5vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -120,6 +123,7 @@ body {
   border-radius: 4vw;
   width: 48%;
   height: 8vh;
+  max-height: 70px;
   cursor: pointer;
   transition: all 0.5s ease;
   display: flex;
@@ -166,6 +170,7 @@ body {
 
 .ticker {
   height: 8vh;
+  max-height: 58px;
   width: 100%;
   display: flex;
   align-items: center;
@@ -174,6 +179,7 @@ body {
 }
 
 .ticker-text {
+  text-transform: uppercase;
   color: #fff;
   font-size: 1.5vw;
   text-align: center;
@@ -192,14 +198,15 @@ body {
   width: 100%;
   display: flex;
   align-items: center;
-  gap: 4%;
-  margin-top: 10vh;
+  gap: 6%;
+  margin-top: 5.2vh;
 }
 
 .support-heading {
   width: 55vw;
   color: #313131;
-  font-size: 2vw;
+  font-size: 2.6vw;
+  line-height: 135%;
   text-transform: uppercase;
   text-align: left;
 }
@@ -215,10 +222,9 @@ body {
 
 .support-content-container {
   width: 100%;
-  margin-top: 4%;
+  margin-top: 3%;
   display: flex;
   align-items: center;
-  gap: 3%;
 }
 
 .support-content {
@@ -226,14 +232,14 @@ body {
 }
 
 .support-content-img {
-  width: 35%;
+  width: 40%;
 }
 
 .table {
   width: 100%;
   border-spacing: 0px;
   border-collapse: collapse;
-  margin-top: 4%;
+  margin-top: 4vh;
 }
 
 .ceil {
@@ -244,7 +250,7 @@ body {
 }
 
 .first-column {
-  width: 38%;
+  width: 45%;
   color: #313131;
   opacity: 70%;
   border-left: none;
@@ -273,14 +279,14 @@ body {
 
 .support-text {
   width: 100%;
-  margin-top: 4%;
+  margin-top: 8%;
   color: #3057a2;
   font-size: 1.5vw;
   text-align: left;
 }
 
 .section-stages {
-  margin-top: 26vh;
+  margin-top: 10.5vh;
   z-index: 0;
   position: relative;
 }
@@ -305,7 +311,7 @@ body {
 
 .stages-of-transformation {
   margin-right: 5vw;
-  margin-top: 7vh;
+  margin-top: 3.5vh;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.4vw;
@@ -313,12 +319,15 @@ body {
 
 .stage {
   display: flex;
-  gap: 2.6vw;
+  gap: 1.6vw;
   align-items: flex-start;
   background-image: url(assets/img/stages-background.png);
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 1.5vw;
+  padding-top: 1.5vw;
+  padding-left: 1.5vw;
+  padding-right: 0;
+  padding-bottom: 0.5vh;
 }
 
 .stage-item3 {
@@ -351,7 +360,6 @@ body {
   line-height: 120%;
   font-weight: 500;
   color: #313131;
-  text-align: left;
 }
 
 .helicopter {
@@ -363,17 +371,17 @@ body {
   z-index: 5;
   background-image: url(assets/img/stage-helicopter.png);
   background-repeat: no-repeat;
-  background-position: bottom 0 right 0;
+  background-position: bottom 2% right 2%;
   background-size: 27.5vw;
 }
 
 .section-participants {
-  margin-top: 26vh;
+  margin-top: 13vh;
 }
 
 .participants-heading-container {
-  margin-right: 5vw;
-  width: 90vw;
+  margin-right: 5.2vw;
+  width: 89.6vw;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -388,6 +396,7 @@ body {
 
 .pagination-container {
   height: 5.7vh;
+  max-height: 44px;
   width: 11vw;
   display: flex;
   align-items: center;
@@ -419,6 +428,7 @@ body {
 
 .arrow-img {
   height: 2.2vh;
+  max-height: 8.5px;
   width: 0.6vw;
   padding: 1vw;
 }
@@ -447,10 +457,10 @@ body {
 }
 
 .participants-carusel {
-  margin-right: 5vw;
-  width: 90vw;
-  margin-top: 7.8vh;
-  margin-bottom: 18vh;
+  margin-right: 5.2vw;
+  width: 89.6vw;
+  margin-top: 4vh;
+  margin-bottom: 9vh;
 }
 
 .participants-carusel-inner {
@@ -475,7 +485,7 @@ body {
   font-size: 1.8vw;
   line-height: 120%;
   font-weight: 600;
-  margin-top: 3.6vh;
+  margin-top: 1.8vh;
 }
 
 .participant-title {
@@ -484,7 +494,7 @@ body {
   font-size: 1.5vw;
   line-height: 120%;
   font-weight: 400;
-  margin-top: 0.8vh;
+  margin-top: 0;
 }
 
 .participant-btn {
@@ -492,17 +502,25 @@ body {
   font-size: 1.2vw;
   line-height: 120%;
   font-weight: 500;
-  margin-top: 2.6vh;
+  margin-top: 1vh;
   text-align: center;
   border: solid 1px #3057a2;
   padding: 2% 3%;
   border-radius: 4.5vw;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.participant-btn:hover {
+  color: #fff;
+  background-color: #3057a2;
 }
 
 .footer {
-  width: 90vw;
-  padding: 5vh 5vw 9vh 5vw;
-  background-color: #E9DED4;
+  width: 95vw;
+  padding: 2.5vh 0 4vh 5.2vw;
+  background-color: #e9ded4;
+  max-height: 150px;
 }
 
 .footer-text {
