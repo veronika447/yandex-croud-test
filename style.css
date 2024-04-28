@@ -461,15 +461,19 @@ body {
   width: 89.6vw;
   margin-top: 4vh;
   margin-bottom: 9vh;
+  position: relative;
+  overflow: hidden;
 }
 
 .participants-carusel-inner {
   display: flex;
   justify-content: space-between;
-  /* width: 300%; */
+  width: 200%;
+  transition: transform 0.5s;
 }
 
 .participants-card {
+  flex: 1;
   width: 28.8vw;
   display: flex;
   flex-direction: column;
